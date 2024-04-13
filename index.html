@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <style>
+    .green-text {
+      color: green;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="confirmpassword"], input[type="submit"], .social-login {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .social-login {
+      background-color: #3b5998;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .social-login.google {
+      background-color: #dd4b39;
+    }
+
+    .line-container {
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .line {
+      width: 100%;
+      border-bottom: 1px solid #000;
+      margin-bottom: 10px;
+    }
+
+    .text-on-line {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 0 10px;
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Login&nbsp;&nbsp;I&nbsp;&nbsp;<span class="green-text">Register</span></h2>
+  <p><small>Enter your email and password to register.</small></p>
+
+  <form action="#" method="post">
+    <label for="reg-username"></label>
+    <input type="text" id="reg-username" name="reg-username" placeholder="Username">
+    <label for="reg-email"></label>
+    <input type="email" id="reg-email" name="reg-email" placeholder="Enter your email address">
+    <label for="reg-password"></label>
+    <input type="password" id="reg-password" placeholder="Password">
+    <label for="reg-confirmpassword"></label>
+    <input type="text" id="reg-confirmpassword" name="reg-username" placeholder="Confirm Password">
+    <input type="submit" value="Register">
+
+  </form>
+  <div class="line-container">
+    <div class="line"></div>
+    <div class="text-on-line"><small>Or register with</small></div>
+  </div>
+  <div class="social-login facebook">Continue with Facebook</div>
+  <div class="social-login google">Continue with Google</div>
+</div>
+</body>
+</html>
